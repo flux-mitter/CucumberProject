@@ -1,0 +1,76 @@
+[
+  {
+    "line": 20,
+    "elements": [
+      {
+        "start_timestamp": "2021-05-19T15:51:42.095Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1551162700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.launchApp.initialize()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "Title of your scenario",
+        "description": "",
+        "id": "title-of-your-feature;title-of-your-scenario",
+        "after": [
+          {
+            "result": {
+              "duration": 686260500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.launchApp.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6273842100,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "Launch application with url \"https://flipkart.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://flipkart.com",
+                  "offset": 29
+                }
+              ],
+              "location": "StepDefinitions.launchApp.launchingWeb(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 339049500,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "Take Screenshot",
+            "match": {
+              "location": "StepDefinitions.launchApp.takescreenshot()"
+            },
+            "keyword": "When "
+          }
+        ]
+      }
+    ],
+    "name": "Title of your feature",
+    "description": "  I want to use this template for my feature file",
+    "id": "title-of-your-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/FeatureFiles/test.feature",
+    "tags": []
+  }
+]
