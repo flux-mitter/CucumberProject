@@ -15,6 +15,7 @@ public class setUp
 	public static void beforeScenario(){
 		//System.setProperty("webdriver.chrome.driver", "//D://My Work//chromedriver.exe");
 		String s=System.getProperty("user.dir")+"//WebDriver";
+		//test ul = "http://the-internet.herokuapp.com/iframe"
 		System.out.println(s);
 		System.setProperty("webdriver.chrome.driver", s+"//chromedriver.exe");
 	  driver = new ChromeDriver();
