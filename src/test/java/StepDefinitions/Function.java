@@ -23,12 +23,13 @@ public class Function
 	  public Function(Setup setup) 
 	  { 
 		  this.setup = setup; 
+		  driver=setup.getDriver();
 	}
 	 
 	
 	
 	 
-	@Before
+	@org.junit.Before
 	public void initialize()
 	{
 		driver=setup.getDriver();
@@ -58,7 +59,7 @@ public class Function
 	public void click(WebElement element)
 	{
 		//WebElement emailTxt = driver.findElement(By.id("email"));  
-		JavascriptExecutor jsExecutor = (JavascriptExecutor) setup.getDriver();  
+		JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;  
 		jsExecutor.executeScript("arguments[0].style.border='2px solid red'", element);
 		element.click();
 	}
