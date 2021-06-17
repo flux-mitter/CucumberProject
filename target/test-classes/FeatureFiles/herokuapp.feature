@@ -26,6 +26,12 @@ Feature: Title of your feature
    #When Take Screenshot
    
    
+   Scenario: Find Broken images herokuapp
+   Given Launch herokuapp "http://the-internet.herokuapp.com/"
+   Then click on link from main page "Broken Images"
+   Then Find Broken images in the page
+   #When Take Screenshot
+   
 
 
     

@@ -30,7 +30,7 @@ import io.cucumber.junit.CucumberOptions;
  */
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "src/test/resources/FeatureFiles/", 
+@CucumberOptions(features = "src/test/resources/FeatureFiles/testingTestCases.feature", 
 				glue = {"StepDefinitions" },	
 				//plugin = { "pretty", "html:target/test-output", "json:json_output/cucumber.html", "junit:junit_xml/cucumber.xml"},
 		
