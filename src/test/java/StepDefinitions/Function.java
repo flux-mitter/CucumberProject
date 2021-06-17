@@ -19,17 +19,20 @@ public class Function
 	herokuappPage herokuapp;
 	Scenario scn;
 
-	/*
-	 * public Function(WebDriver driver) { this.driver = driver; }
-	 */
+	
+	  public Function(Setup setup) 
+	  { 
+		  this.setup = setup; 
+	}
+	 
 	
 	
 	 
-//	@Before
-//	public void initialize()
-//	{
-//		driver=setup.getDriver();
-//	}
+	@Before
+	public void initialize()
+	{
+		driver=setup.getDriver();
+	}
 //	@Before 
 //	public void initialize() { //setUp.beforeScenario(); 
 //		String s=System.getProperty("user.dir")+"//WebDriver";
@@ -52,10 +55,10 @@ public class Function
 //	
 //	
 //	}
-	public void click(WebDriver driver,WebElement element)
+	public void click(WebElement element)
 	{
 		//WebElement emailTxt = driver.findElement(By.id("email"));  
-		JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;  
+		JavascriptExecutor jsExecutor = (JavascriptExecutor) setup.getDriver();  
 		jsExecutor.executeScript("arguments[0].style.border='2px solid red'", element);
 		element.click();
 	}

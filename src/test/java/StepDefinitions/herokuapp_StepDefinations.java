@@ -54,8 +54,9 @@ public class herokuapp_StepDefinations
 
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS) ;
-		
-		 function=new Function();
+		setup.setDriver(driver);
+		setup.initializePageObjectClasses(driver, scn);
+		 function=new Function(setup);
 		 
 	
 	
@@ -83,7 +84,7 @@ public class herokuapp_StepDefinations
 		driver.get(url);
 		driver.manage().window().maximize();
 		WebDriverWait wait = new WebDriverWait(driver, 20);
-		setup.initializePageObjectClasses(driver, scn);
+		
 		//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='example']/p")));
 		//String welcomemsg= herokuappPage.welcomeStatement().getText();
 		//Assert.assertEquals(true, welcomemsg.contains("Congratulations! You must have the proper credentials."));
@@ -92,7 +93,7 @@ public class herokuapp_StepDefinations
 	@Given("^click on link from main page \"([^\"]*)\"$")
 	public void openMainPageLink(String link) throws InterruptedException {
 
-		function.click(driver,setup.getHerokuapp().welcomePageLink(link));
+		function.click(setup.getHerokuapp().welcomePageLink(link));
 		Thread.sleep(10000);
 		//herokuappPage.welcomePageLink(link).click();
 		//Assert.assertEquals(true, welcomemsg.contains("Congratulations! You must have the proper credentials."));
