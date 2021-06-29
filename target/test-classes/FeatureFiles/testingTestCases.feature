@@ -6,10 +6,10 @@ Feature: Title of your feature
 
    
    
-   Scenario: Find Broken images herokuapp
+   Scenario: Drag and drop herokuapp
    Given Launch herokuapp "http://the-internet.herokuapp.com/"
-   Then click on link from main page "Broken Images"
-   Then Find Broken images in the page
+   Then click on link from main page "Drag and Drop"
+   Then Drag and drop objects
    #When Take Screenshot
    
 

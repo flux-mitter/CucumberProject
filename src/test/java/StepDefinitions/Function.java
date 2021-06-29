@@ -6,6 +6,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 
 import PageObject.herokuappPage;
 import context.Setup;
@@ -63,5 +64,21 @@ public class Function
 		jsExecutor.executeScript("arguments[0].style.border='2px solid red'", element);
 		element.click();
 	}
-	
+	public void dragAndDrop(WebElement source, WebElement target)
+	{
+		Actions actions= new Actions(driver);
+		//actions.clickAndHold(source);
+		//actions.moveToElement(target);
+		actions.clickAndHold(source);
+		actions.moveToElement(target);
+		actions.release();
+		//actions.dragAndDrop(source, target).build().perform();;
+		driver.switchTo().defaultContent();
+		try {
+			Thread.sleep(10000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
 }

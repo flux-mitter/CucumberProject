@@ -2,6 +2,9 @@ package StepDefinitions;
 
 
 
+import static org.junit.Assert.assertArrayEquals;
+import static org.junit.Assert.assertEquals;
+
 import java.io.IOException;
 
 
@@ -94,7 +97,7 @@ public class herokuapp_StepDefinations
 	public void openMainPageLink(String link) throws InterruptedException {
 
 		function.click(setup.getHerokuapp().welcomePageLink(link));
-		Thread.sleep(10000);
+		//Thread.sleep(10000);
 		//herokuappPage.welcomePageLink(link).click();
 		//Assert.assertEquals(true, welcomemsg.contains("Congratulations! You must have the proper credentials."));
 }
@@ -136,7 +139,13 @@ public class herokuapp_StepDefinations
        // System.out.println("The page " + URL + " has " + iBrokenImageCount + " broken images");
 	
 }
-	
+	@Given("^Drag and drop objects$")
+	public void dragAndDrop() throws InterruptedException 
+	{
+		function.dragAndDrop(setup.getHerokuapp().block1left(), setup.getHerokuapp().block2right());
+		//assertEquals("Drag and Drop operation", setup.getHerokuapp().block2right().getText(), "A");
+		//assertEquals("Drag and Drop operation", setup.getHerokuapp().block1left().getText(), "B");
+	}
 	
 	
 	

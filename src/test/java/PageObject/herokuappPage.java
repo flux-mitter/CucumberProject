@@ -34,4 +34,10 @@ public class herokuappPage
 	public WebElement welcomePageLink(String link) {
 		return driver.findElement(By.xpath("//ul/li/a[contains(text(),'"+link+"')]"));
 	}
+	public WebElement block1left() {
+		return driver.findElement(By.xpath("//div[@id='column-a']"));
+	}
+	public WebElement block2right() {
+		return driver.findElement(By.xpath("//div[@id='column-b']"));
+	}
 }
