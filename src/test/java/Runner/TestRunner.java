@@ -41,7 +41,9 @@ import io.cucumber.junit.CucumberOptions;
 		 */
 		 
 						//plugin = { "pretty", "html:target/cucumber-reports/run.html" },
-						plugin = { "pretty", "html:target/run.html" },
+						//plugin = { "pretty", "html:target/run.html" },
+						plugin= {"html:target/cucumber-html-report","json:target/cucumber-reports/cucumber.json","junit:target/cucumber-reports/cucumber.xml"},//"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
+						
 				monochrome = true,
 				strict = true,
 				dryRun = false)

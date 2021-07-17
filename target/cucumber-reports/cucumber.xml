@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="7.569">
+    <testcase classname="Title of your feature" name="Find Broken images herokuapp" time="7.401">
+        <system-out><![CDATA[Given Launch herokuapp "http://the-internet.herokuapp.com/".................passed
+Then click on link from main page "Broken Image"............................passed
+Then Find Broken images in the page.........................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
