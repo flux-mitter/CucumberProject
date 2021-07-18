@@ -36,7 +36,8 @@ public class Setup
 	
 	  public void initializePageObjectClasses(WebDriver driver,Scenario scn) {
 	  login = new Login(driver,scn); //Login = new Login(driver,scn); herokuapp =
-	  herokuapp=new herokuappPage(driver);
+	
+	  herokuapp=new herokuappPage(driver, scn);
 	  
 	  
 	  }

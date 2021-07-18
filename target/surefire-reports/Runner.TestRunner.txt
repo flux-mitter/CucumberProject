@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: Runner.TestRunner
 -------------------------------------------------------------------------------
+<<<<<<< Upstream, based on origin/main
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.846 sec - in Runner.TestRunner
+=======
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 61.638 s - in Runner.TestRunner
+>>>>>>> 3b492f9 local commit

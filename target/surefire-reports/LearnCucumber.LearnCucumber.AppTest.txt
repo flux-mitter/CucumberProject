@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: LearnCucumber.LearnCucumber.AppTest
 -------------------------------------------------------------------------------
+<<<<<<< Upstream, based on origin/main
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in LearnCucumber.LearnCucumber.AppTest
+=======
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 s - in LearnCucumber.LearnCucumber.AppTest
+>>>>>>> 3b492f9 local commit

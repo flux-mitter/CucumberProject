@@ -87,7 +87,7 @@ public class herokuapp_StepDefinations
 		driver.get(url);
 		driver.manage().window().maximize();
 		WebDriverWait wait = new WebDriverWait(driver, 20);
-		
+		//scn.
 		//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='example']/p")));
 		//String welcomemsg= herokuappPage.welcomeStatement().getText();
 		//Assert.assertEquals(true, welcomemsg.contains("Congratulations! You must have the proper credentials."));

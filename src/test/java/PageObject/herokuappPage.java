@@ -21,9 +21,9 @@ public class herokuappPage
 	 */
 	//Setup setup;
 	WebDriver driver;
-	
+	Scenario scn;
 
-	public herokuappPage(WebDriver driver) {
+	public herokuappPage(WebDriver driver, Scenario scn) {
 		this.driver = driver;
 		
 	}
