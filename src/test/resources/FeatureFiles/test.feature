@@ -17,6 +17,7 @@ Feature: Title of your feature
    Then click on link from main page "Drag and Drop"
    Then Drag and drop objects
    #When Take Screenshot
+   #Test
    
 
 
